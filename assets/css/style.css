@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
   scroll-behavior: smooth;
   --google-blue: #4285f4; /* Google Blue */
@@ -9,7 +11,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--google-text);
   background-color: var(--google-bg); /* Google Background Color */
 }
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -187,6 +189,7 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  height: 22px;
 }
 
 .header .logo span {
@@ -194,7 +197,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #0d47a1; /* Google Dark Blue */
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 3px;
 }
 
@@ -212,7 +215,7 @@ section {
 }
 
 body {
-  font-family: "Roboto", sans-serif; /* Google Roboto font */
+  font-family: "Open Sans", sans-serif; /* Google Roboto font */
   color: var(--google-text); /* Google Material Design text color */
   background-color: var(--google-bg); /* Google Material Design background color */
 }
@@ -245,9 +248,9 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: var(--google-nav-text); /* Adjust this color to your preference */
   white-space: nowrap;
   transition: 0.3s;
