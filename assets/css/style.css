@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
   scroll-behavior: smooth;
+  --google-blue: #4285f4; /* Google Blue */
+  --google-red: #ea4335; /* Google Red */
+  --google-yellow: #fbbc05; /* Google Yellow */
+  --google-green: #34a853; /* Google Green */
+  --google-text: #333; /* Google Material Design text color */
+  --google-bg: #fff; /* Google Material Design background color */
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--google-text);
+  background-color: var(--google-bg); /* Google Background Color */
 }
 
 a {
-  color: #4154f1;
+  color: var(--google-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
-  text-decoration: none;
+  color: var(--google-red);
+  text-decoration: underline;
 }
 
 h1,
@@ -24,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -45,7 +53,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: var(--google-blue); /* Google Blue */
   text-transform: uppercase;
 }
 
@@ -55,7 +63,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: var(--google-blue); /* Google Blue */
 }
 
 @media (max-width: 768px) {
@@ -70,7 +78,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: var(--google-bg); /* Google Background Color */
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -116,6 +124,7 @@ section {
   content: "/";
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -126,7 +135,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #4285f4; /* Google Blue */
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -140,7 +149,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: #0d47a1; /* Google Dark Blue */
   color: #fff;
 }
 
@@ -180,14 +189,15 @@ section {
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  height: 22px;
 }
 
 .header .logo span {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
-  font-family: "Nunito", sans-serif;
+  color: #0d47a1; /* Google Dark Blue */
+  font-family: "Open Sans", sans-serif;
   margin-top: 3px;
 }
 
@@ -199,6 +209,25 @@ section {
 */
 .navbar {
   padding: 0;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; /* Google Roboto font */
+  color: var(--google-text); /* Google Material Design text color */
+  background-color: var(--google-bg); /* Google Material Design background color */
+}
+
+a {
+  color: var(--google-blue); /* Google Blue */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--google-dark-blue); /* Google Dark Blue */
+  text-decoration: underline;
 }
 
 .navbar ul {
@@ -219,10 +248,10 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: 700;
-  color: #013289;
+  /* font-weight: 700; */
+  color: var(--google-nav-text); /* Adjust this color to your preference */
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -237,13 +266,13 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #4154f1;
+.navbar li:hover > a {
+  color: var(--google-blue); /* Google Blue */
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #4154f1;
+  background: var(--google-blue); /* Google Blue */
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -253,7 +282,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: var(--google-light-blue); /* Google Light Blue */
 }
 
 .navbar .dropdown ul {
@@ -289,11 +318,11 @@ section {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #4154f1;
+.navbar .dropdown ul li:hover > a {
+  color: var(--google-blue); /* Google Blue */
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -315,14 +344,14 @@ section {
 }
 
 .navbar .megamenu ul li a,
-.navbar .megamenu ul li:hover>a {
-  color: #013289;
+.navbar .megamenu ul li:hover > a {
+  color: var(--google-nav-text); /* Adjust this color to your preference */
 }
 
 .navbar .megamenu ul li a:hover,
 .navbar .megamenu ul li .active,
 .navbar .megamenu ul li .active:hover {
-  color: #4154f1;
+  color: var(--google-blue); /* Google Blue */
 }
 
 .navbar .dropdown .dropdown ul {
@@ -331,7 +360,7 @@ section {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -343,7 +372,7 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -352,7 +381,7 @@ section {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: var(--google-nav-text); /* Adjust this color to your preference */
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -409,13 +438,13 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #012970;
+  color: var(--google-nav-text); /* Adjust this color to your preference */
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #4154f1;
+  color: var(--google-blue); /* Google Blue */
 }
 
 .navbar-mobile .getstarted,
@@ -450,7 +479,7 @@ section {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #4154f1;
+  color: var(--google-blue); /* Google Blue */
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -471,7 +500,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #012970;
+  color: #4285F4;
 }
 
 .hero h2 {
